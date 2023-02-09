@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         adapter = ShopListAdapter()
         rvShopList.adapter = adapter
         with(rvShopList) {
+
             rvShopList.layoutManager = LinearLayoutManager(this@MainActivity)
             rvShopList.recycledViewPool.setMaxRecycledViews(VIEW_TYPE_ENABLE, MAX_POOL_SIZE)
             rvShopList.recycledViewPool.setMaxRecycledViews(VIEW_TYPE_DISABLED, MAX_POOL_SIZE)
